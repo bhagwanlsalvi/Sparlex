@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #cc3f7e;
+}
+
+i {
+    color:#ff4f9d;
+}
+.purple-text{
+    color:#ff4f9d;
+}
+.purple-btn{
+    background: #ff4f9d;
+    border: #ff4f9d;
+    transition: all 0.6s ease-in;
+}
+.purple-btn:hover{
+    color: #ffffff;
+    background: #884cd2;
+    border: #884cd2;
+}
+
+/*=======================================top-navbar-start=======================================  */
+.main .container-fluid {
+    padding: 0;
+}
+
+.topbar {
+    padding: 10px 0;
+    background: #884cd2;
+}
+
+.main .topbar .box {
+    height: 30px;
+    width: 30px;
+    line-height: calc(30px);
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    border-color: #ffffff;
+}
+
+/*=======================================top-navbar-end=======================================  */
+
+/*=======================================navbar-start=======================================  */
+.logo h1 {
+    color: #ff4f9d;
+    font-size: 51.248px;
+    margin: 0 0 0 8px;
+}
+.search-modal{
+    height: 40px;
+    width: 40px;
+    line-height: calc(40px);
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background: #ff4f9d ;
+    border-color: #ff4f9d;
+}
+.search-modal i{
+    color: #ffffff;
+}
+.modal-content{
+    background: transparent !important;
+}
+.search-modal{
+    cursor: pointer;
+}
+/*=======================================navbar-end=======================================  */
