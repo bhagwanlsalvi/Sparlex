@@ -11,6 +11,7 @@ a {
 }
 
 a:hover {
+    color: red;
     color: #cc3f7e;
 }
 
