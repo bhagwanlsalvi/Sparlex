@@ -77,12 +77,14 @@ a:hover {
     text-align: center;
     border: 1px solid #000000;
     border-radius: 50%;
-    border-color: #ffffff;   
+    border-color: #ffffff;
 }
-.main i{
+
+.main i {
     color: #ff4f9d;
 }
-.main .topbar .box i:hover{
+
+.main .topbar .box i:hover {
     color: #cc3f7e;
 }
 
@@ -108,7 +110,8 @@ a:hover {
     font-weight: bold;
     transition: 0.5s ease;
 }
-.nav-item .nav-link:hover{
+
+.nav-item .nav-link:hover {
     color: #ff4f9d !important;
 }
 
@@ -238,7 +241,7 @@ a:hover {
 
 .our-servicer .service-card-btn {
     width: 100%;
-    height: 0px;
+    /* height: 0px; */
 }
 
 .service-card-btn .purple-btn {
@@ -373,7 +376,7 @@ a:hover {
 
 /*=======================================appointment-strat=======================================  */
 
-.appointment {
+.appointment-inner{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/appointment-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -456,6 +459,10 @@ a:hover {
     width: 150px;
 }
 
+.gallery .tab-class .nav-item{
+    padding: 0 0 20px 0;
+}
+
 .gallery .tab-class .nav-item a.active {
     background: #ff4f9d !important;
 }
@@ -515,7 +522,7 @@ a:hover {
     /* margin-left: 83%; */
 }
 
-.pricing {
+.pricing-inner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/appointment-background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -565,7 +572,9 @@ a:hover {
     transition: 0.5s;
 }
 
-.team .team-img:hover .team-social {
+.team .team-item:hover .team-social {
+    top: 20px;
+    left: 20px;
     opacity: 1;
 }
 
@@ -592,17 +601,6 @@ a:hover {
     background: #884cd2;
 }
 
-
-/* .our-servicer .card-right:hover .service-card-btn .purple-btn */
-.team-social a:hover {
-
-    background: #884cd2;
-}
-
-.team-social a i:hover {
-    color: #DCCAF2;
-}
-
 .team-social a {
     width: 32px;
     height: 32px;
@@ -611,14 +609,13 @@ a:hover {
     align-items: center;
     justify-content: center;
     font-weight: normal;
+    background: #ffffff;
+    color: #ff4f9d !important;
 }
 
-ul li {
-    list-style: none;
-}
-
-.team-social a {
-    background-color: red;
+.team-social a:hover {
+    color: #ffffff !important;
+    background: #884cd2;
 }
 
 /*=======================================specialist-end=======================================  */
@@ -626,11 +623,12 @@ ul li {
 
 
 /*=======================================testimonial-strat=======================================  */
-.testimonial {
+.testimonial-inner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/testimonial-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .testimonial .testimonial-item {
@@ -713,7 +711,8 @@ ul li {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     background: var(--bs-dark) !important;
 }
-.copyright a{
+
+.copyright a {
     color: #ff4f9d !important;
     text-decoration: none;
     border: none;
@@ -721,14 +720,66 @@ ul li {
 }
 
 .copyright .copryright-icon:hover {
-    background:#884cd2 !important;
-    color: #f9f8f6!important;
+    background: #884cd2 !important;
+    color: #f9f8f6 !important;
     border: none;
 }
-.copyright-text{
+
+.copyright-text {
     transition: .5s;
 }
-.copyright-text:hover{  
+
+.copyright-text:hover {
     color: #cc3f7e !important;
 }
+
 /*=======================================copyright-end=======================================  */
+
+
+/* .slick-prev:before {
+    content: "<";
+    font-family: inherit !important;
+    color: red !important;
+    font-size: 30px !important;
+  }
+  
+  .slick-next:before {
+    font-family: inherit !important;
+    content: ">";
+    color: red !important;
+    font-size: 30px !important;
+  } */
+.slick-prev,
+.slick-next {
+    top: -16% !important;
+
+}
+
+.slick-prev {
+    left: 81% !important;
+}
+
+.slick-next {
+    right: 8% !important;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: 1 !important;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: #ff4f9d !important;
+    outline: none;
+    background: transparent !important;
+}
+
+.slick-prev::before,
+.slick-next:before {
+    font-size: 5rem !important;
+    font-family: inherit !important;
+    /* background: #ff4f9d !important; */
+}
