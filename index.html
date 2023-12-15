@@ -26,12 +26,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
     <!-- jquery cnd -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+   
 </head>
 
 <body>
 
     <header>
-
+       
         <!-- =======================================top-navbar-start======================================= -->
         <section class="main d-none d-lg-block">
             <div class="container-fluid ">
@@ -827,7 +831,7 @@
                         <div class="slider-item-box">
                             <div class="row">
                                 <div class="col-md-11 mx-3">
-                                    <div class="card rounded pricing-content">
+                                    <div class="card rounded pricing-content mx-3">
 
                                         <div
                                             class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary1 p-4">
@@ -861,7 +865,7 @@
                         <div class="slider-item-box">
                             <div class="row">
                                 <div class="col-md-11 mx-3">
-                                    <div class="card rounded pricing-content">
+                                    <div class="card rounded pricing-content mx-3">
 
                                         <div
                                             class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary1 p-4">
@@ -895,7 +899,7 @@
                         <div class="slider-item-box">
                             <div class="row">
                                 <div class="col-md-11 mx-3">
-                                    <div class="card rounded pricing-content">
+                                    <div class="card rounded pricing-content mx-3">
 
                                         <div
                                             class="d-flex align-items-center justify-content-between bg-light rounded-top border-3 border-bottom border-primary1 p-4">
@@ -1514,9 +1518,6 @@
         <!-- =======================================Contact-end======================================= -->
     </main>
 
-    <div class="container">
-
-    </div>
     <footer>
         <section class="footers">
             <div class="container-fluid footer py-5">
@@ -1613,6 +1614,8 @@
             </div>
         </div>
     </footer>
+    <!-- Back to top button -->
+    <a href="#" id="scroll" style="display: none;"><span></span><samp></samp></a>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -1669,9 +1672,25 @@
             $('.slider-container').slick({
                 autoplay: true,
                 arrows: true,
-                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-3x fa-angle-left' aria-hidden='true'></i></button>",
-                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-3x fa-angle-right' aria-hidden='true'></i></button>"
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-solid fa-arrow-right-long' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-solid fa-arrow-right-long' aria-hidden='true'></i></button>"
             });
+        });
+    </script>
+
+    <script>     
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
         });
     </script>
 </body>
