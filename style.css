@@ -550,10 +550,7 @@ html {
 
 /*=======================================pricing-strat=======================================  */
 
-.text-right {
-    /* float: right !important; */
-    /* margin-left: 83%; */
-}
+
 
 .pricing-inner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/appointment-background.jpg);
@@ -562,17 +559,8 @@ html {
     background-size: cover;
 }
 
-.pricing .fa-arrow {
-    color: white;
-    font-size: 3rem;
-}
-
-.pricing .fa-arrow:hover {
-    color: #ff4f9d;
-}
-
-.pricing .pricing-content {
-    background: rgba(255, 255, 255, 0.4);
+.pricing-content {
+    background: rgba(255, 255, 255, 0.4) !important;
 }
 
 /*=======================================pricing-end=======================================  */
@@ -686,7 +674,16 @@ html {
 .testimonial .fa-arrow:hover {
     color: #ff4f9d;
 }
+.testimonial .section-header{
+    margin-bottom: 14%;
+}
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .testimonial .section-header{
+        margin-bottom: 9%;
+    }
+}
 /*=======================================testimonial-end=======================================  */
 
 /*=======================================contact-strat=======================================  */
@@ -771,7 +768,7 @@ html {
 
 .slick-prev,
 .slick-next {
-    top: -19% !important;
+    top: -15% !important;
 
 }
 
@@ -860,7 +857,7 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -2px;
+    margin-left: -3px;
     margin-top: -5px;
     height: 25px;
     width: 4px;
